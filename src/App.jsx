@@ -8,6 +8,10 @@ import Cartpage from "./page/Cart/Cartpage";
 import FAQ from "./page/FAQ/FAQ";
 import PrivacyPolicy from "./page/Privacy-Policy/PrivacyPolicy";
 import DisclaimerPage from './page/DisclaimerPage/DisclaimerPage';
+import LimitationOfLiability from "./page/limitationOfLiability/Liability";
+import GeneralInformation from "./page/generalInformation/generalInfo";
+import EyeglassesContactPolicy from "./page/eyeglasses-contact-policy/EyeglassesContactPolicy";
+import RightsEnforcementPolicy from "./page/rights-enforcement-policy/RightsEnforcementPolicy";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -36,6 +40,22 @@ const router = createBrowserRouter([
       {
         path: "/disclaimer",
         element: <DisclaimerPage />
+      },
+      {
+        path: "/liability",
+        element: <LimitationOfLiability />
+      },
+      {
+        path: "/general-info",
+        element: <GeneralInformation />
+      },
+      {
+        path: "/eyeglasses-contact-policy",
+        element: <EyeglassesContactPolicy />
+      },
+      {
+        path: "/rights-enforcement-policy",
+        element: <RightsEnforcementPolicy />
       },
       {
         path: "*",
