@@ -136,10 +136,15 @@ export default function PrivacyPolicy() {
   ];
 
   return (
-    <div className="py-10 px-6 ">
-      <div className=" mx-auto p-8 rounded-lg ">
-        <h1 className="text-3xl font-bold text-red-600 text-center">Privacy Policy</h1>
-        <hr className="border-red-600 mt-2 mb-6 mx-120"></hr>
+    <>
+    <header className="mb-8 bg-gradient-to-r from-black via-red-600 to-black py-12">
+        <h1 className="text-5xl font-bold text-white text-center">
+          Privacy Policy
+        </h1>
+        <hr className="border-white w-100 mt-2 mx-120"></hr>
+    </header>
+    <div className="px-6 ">
+      <div className=" mx-auto p-8 ">
         {sections.map((section, idx) => (
           <div key={idx} className="mb-6">
             <h2 className="text-xl font-semibold mb-2">{section.title}</h2>
@@ -148,5 +153,6 @@ export default function PrivacyPolicy() {
         ))}
       </div>
     </div>
+    </>
   );
 }

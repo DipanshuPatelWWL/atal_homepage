@@ -8,6 +8,8 @@ import Cartpage from "./page/Cart/Cartpage";
 import FAQ from "./page/FAQ/FAQ";
 import PrivacyPolicy from "./page/Privacy-Policy/PrivacyPolicy";
 import DisclaimerPage from './page/DisclaimerPage/DisclaimerPage';
+import TermsAndConditions from "./page/terms&condition/TermsAndConditions";
+import RightsEnforcementPolicy from "./page/right&enforcement/RightsEnforcementPolicy";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -36,6 +38,14 @@ const router = createBrowserRouter([
       {
         path: "/disclaimer",
         element: <DisclaimerPage />
+      },
+      {
+        path: "/termsandconditon",
+        element: <TermsAndConditions/>
+      },
+      {
+        path:"/RightsEnforcementPolicy",
+        element:<RightsEnforcementPolicy/>
       },
       {
         path: "*",
